@@ -3,15 +3,6 @@ console.log("Hello World!")
 let humanScore = 0;
 let computerScore = 0;
 
-while(humanScore !== 3 && computerScore !== 3) {
-    playRound();
-}
-
-if(humanScore == 3) {
-     console.log("You win!");
-} else {
-     console.log("The computer wins!");
-}
 
 function playRound() {
     let computerChoice = getComputerChoice();
@@ -63,3 +54,17 @@ function getHumanChoice() {
         return "Wrong input";
     }
 }
+
+const btn = document.querySelector("#btn");
+btn.addEventListener("click", function(e) {
+    console.log("print");
+    if(humanScore !== 3 && computerScore !== 3) {
+        playRound();
+    } else if(humanScore == 3) {
+        document.getElementById("result").innerHTML = "You win!";
+   } else {
+        document.getElementById("result").innerHTML = "The computer wins!";
+   }
+   document.getElementById("humanScore").innerHTML = humanScore;
+   document.getElementById("computerScore").innerHTML = computerScore;
+})
