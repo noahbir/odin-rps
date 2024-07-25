@@ -1,0 +1,29 @@
+.btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+html, body {
+    overflow-x: hidden;
+}
+
+.result-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.result-item {
+    flex: 1;
+}
+
+.choice-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}

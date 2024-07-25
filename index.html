@@ -9,12 +9,38 @@
     </head>
     <body>
         <h1>Rock Paper Scissor</h1>
-        <button id="btn">Click Me</button>
-        <h2>Result</h2>
-        <div id="result"></div>
-        <h2>Score Human</h1>
-        <div id="humanScore">0</div>
-        <h2>Score Computer</h2>
-        <div id="computerScore">0</div>
+
+        <div class="btn-container">
+            <button id="btn-rock">
+                <img src="rock.jpg" alt="rock">
+            </button>
+
+            <button id="btn-paper">
+                <img src="paper.webp" alt="rock">
+            </button>
+
+            <button id="btn-scissors">
+                <img src="scissors.avif" alt="rock">
+            </button>
+        </div>
+
+        <div class="result-container">
+            <div class="result-item">
+                <h2>Computer chooses: </h2>
+                <img id="computerChoice" src="" alt="Computer`s choice" style="display: none;" class="choice-img">
+            </div>
+            <div class="result-item">
+                <h2>Result</h1>
+                <div id="result"></div>
+            </div>
+            <div class="result-item">
+                <h2>Score Human</h1>
+                <div id="humanScore">0</div>
+            </div>
+            <div class="result-item">
+                <h2>Score Computer</h2>
+                <div id="computerScore">0</div>
+            </div>
+        </div>
     </body>
 </html>
